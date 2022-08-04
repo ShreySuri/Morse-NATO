@@ -39,4 +39,5 @@ elif counter == 2:
         y = code[i]
         string = "%s  --  %s" % (x, y)
         print(string)
+elif counter == 3:
     
