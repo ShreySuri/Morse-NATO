@@ -21,4 +21,22 @@ elif counter == 2 or counter == 5:
     code = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray", "Yankee", "Zulu"]
 else:
     print("Something went wrong.")
+
+
+if counter == 1:
+    print("")
+    for i in range (0, 26):
+        x = alphabet[i]
+        x = x.upper()
+        y = code[i]
+        string = "%s    %s" % (x, y)
+        print(string)
+elif counter == 2:
+    print("")
+    for i in range (0, 26):
+        x = alphabet[i]
+        x = x.upper()
+        y = code[i]
+        string = "%s  --  %s" % (x, y)
+        print(string)
     
