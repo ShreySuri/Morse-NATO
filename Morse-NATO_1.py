@@ -1,17 +1,21 @@
 input_1 = 0
 accepted_val = ["1", "2", "3", "4", "5"]
-counter = 0
-while counter != 1:
+counter = None
+while counter == None :
     print("")
     print("To get the full Morse Code Alphabet, enter '1'. ")
     print("To get the full NATO Phonetic Alphabet, enter '2'. ")
     print("To encode a string into Morse Code, enter '3'. ")
     print("To decode a Morse Code message into a string, enter '4'. ")
-    input_1 = input(print("To encode a string into the NATO Alphabet, enter '5'. "))
-    counter = 0                
+    input_1 = input(print("To encode a string into the NATO Alphabet, enter '5'. "))            
     for i in range (0, 5):
         if accepted_val[i] == input_1:
-            counter = counter + 1
+            counter = i + 1
         else:
             toggle = True
-        
+
+alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+if counter == 1 or counter == 3 or counter == 4:
+    code = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
+elif counter == 
+    
