@@ -41,7 +41,7 @@ elif counter == 2:
         string = "'%s' --  %s" % (x, y)
         print(string)
         
-elif counter == 3:
+elif counter == 3 or counter == 5:
     input_2 = ""
     while len(input_2) == 0:
         input_2 = input(print("Enter your message. Use spaces and periods as neccesary. Do not use any other punctuation. "))
@@ -67,5 +67,3 @@ elif counter == 3:
 
     print(final_message)
 
-elif 
-    
