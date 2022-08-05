@@ -42,34 +42,34 @@ elif counter == 2:
         print(string)
         
 elif counter == 3:
-        input_2 = ""
-        while len(input_2) == 0:
-            input_2 = input(print("Enter your message. "))
+    input_2 = ""
+    while len(input_2) == 0:
+        input_2 = input(print("Enter your message. "))
         input_2 = input_2.lower()
         word_count = len(input_2)
         message_string = ""
         
-        for i in range (0, word_count):
-            word = input_2[i]
-            word = list(word)
-            letter_count = len(word)
+    for i in range (0, word_count):
+        word = input_2[i]
+        word = list(word)
+        letter_count = len(word)
             
-            for j in range (0, letter_count):
-                for k in range (0, 26):
-                    check = False
-                    if word[j] == alphabet[k] or word[j] == alphabet[k].upper():
-                        message_string = "%s%s " % (message_string, code[k])
-                        check = True
-                    else:
-                        toggle = True
-                        
-                if check == False:
-                    message_string = "%s%s " % (message_string, "[unknown character]")
+        for j in range (0, letter_count):
+            check = False
+            for k in range (0, 26):
+                if word[j] == alphabet[k] or word[j] == alphabet[k].upper():
+                    message_string = "%s%s " % (message_string, code[k])
+                    check = True
                 else:
-                    toggle = False
+                    toggle = True
+                        
+            if check == False:
+                message_string = "%s%s " % (message_string, "[unknown character]")
+            else:
+                toggle = False
 
-            message_string = "%s%s " % (message_string, "//")
-
+    if i + 1 < word_count:
+        message_string = "%s%s " % (message_string, "//")
+    else:
         message_string = "%s%s" % (message_string, "////")
         print(message_string)
-                        
