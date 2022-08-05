@@ -25,20 +25,20 @@ else:
 
 if counter == 1:
     print("")
-    for i in range (0, 26):
+    for i in range (0, 28):
         x = alphabet[i]
         x = x.upper()
         y = code[i]
-        string = "%s    %s" % (x, y)
+        string = "'%s'   %s" % (x, y)
         print(string)
         
 elif counter == 2:
     print("")
-    for i in range (0, 26):
+    for i in range (0, 28):
         x = alphabet[i]
         x = x.upper()
         y = code[i]
-        string = "%s  --  %s" % (x, y)
+        string = "'%s' --  %s" % (x, y)
         print(string)
         
 elif counter == 3:
@@ -66,4 +66,16 @@ elif counter == 3:
             toggle = False
 
     print(final_message)
+
+elif counter == 4:
+    input_3 = ""
+    while len(input_3) == 0:
+        input_3 = input(print("Enter your message. Use '//' and '////' as neccesary. Each letter should be seperated by ' '. "))
+
+    message_list = list(input_3)
+    length = len(message)
+    final_message = ""
+
+    
+    
     
