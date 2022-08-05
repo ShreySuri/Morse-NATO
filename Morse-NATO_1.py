@@ -14,11 +14,11 @@ while counter == None :
         else:
             toggle = True
 
-alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " ", "."]
 if counter == 1 or counter == 3 or counter == 4:
-    code = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
+    code = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", "//", "////"]
 elif counter == 2 or counter == 5:
-    code = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray", "Yankee", "Zulu"]
+    code = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-ray", "Yankee", "Zulu", "//", "////"]
 else:
     print("Something went wrong.")
 
@@ -48,28 +48,3 @@ elif counter == 3:
         input_2 = input_2.lower()
         word_count = len(input_2)
         message_string = ""
-        
-    for i in range (0, word_count):
-        word = input_2[i]
-        word = list(word)
-        letter_count = len(word)
-            
-        for j in range (0, letter_count):
-            check = False
-            for k in range (0, 26):
-                if word[j] == alphabet[k] or word[j] == alphabet[k].upper():
-                    message_string = "%s%s " % (message_string, code[k])
-                    check = True
-                else:
-                    toggle = True
-                        
-            if check == False:
-                message_string = "%s%s " % (message_string, "[unknown character]")
-            else:
-                toggle = False
-
-    if i + 1 < word_count:
-        message_string = "%s%s " % (message_string, "//")
-    else:
-        message_string = "%s%s" % (message_string, "////")
-        print(message_string)
