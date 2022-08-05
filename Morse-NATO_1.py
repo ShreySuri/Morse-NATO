@@ -44,7 +44,26 @@ elif counter == 2:
 elif counter == 3:
     input_2 = ""
     while len(input_2) == 0:
-        input_2 = input(print("Enter your message. "))
+        input_2 = input(print("Enter your message. Use spaces and periods as neccesary. Do not use any other punctuation. "))
         input_2 = input_2.lower()
-        word_count = len(input_2)
-        message_string = ""
+        
+    message_list = list(input_2)
+    length = len(message_list)
+    final_message = ""
+
+    for i in range (0, length):
+        check = False
+        for j in range (0, 28):
+            if message_list[i] == alphabet[j]:
+                final_message = "%s%s " % (final_message, code[j])
+                check = True
+            else:
+                toggle = True
+
+        if check == False:
+            final_message = "%s%s " % (final_message, "[unknown character]")
+        else:
+            toggle = False
+
+    print(final_message)
+    
