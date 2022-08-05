@@ -67,15 +67,5 @@ elif counter == 3:
 
     print(final_message)
 
-elif counter == 4:
-    input_3 = ""
-    while len(input_3) == 0:
-        input_3 = input(print("Enter your message. Use '//' and '////' as neccesary. Each letter should be seperated by ' '. "))
-
-    message_list = list(input_3)
-    length = len(message)
-    final_message = ""
-
-    
-    
+elif 
     
