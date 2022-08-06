@@ -1,2 +1,1 @@
-string = "hello"
-print(len(string))
+input_1 = input("Hello.")
