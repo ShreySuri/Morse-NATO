@@ -44,7 +44,7 @@ elif counter == 2:
 elif counter == 3 or counter == 5:
     input_2 = ""
     while len(input_2) == 0:
-        input_2 = input(print("Enter your message. Use spaces and periods as neccesary. Do not use any other punctuation. "))
+        input_2 = input("Enter your message. Use spaces and periods as neccesary. Do not use any other punctuation. ")
         input_2 = input_2.lower()
         
     message_list = list(input_2)
@@ -76,7 +76,7 @@ elif counter == 4:
 
         input_3 = ""
         while len(input_3) == 0:
-            input_3 = input("Enter your message one letter at a time. Use '//' to seperate words and '////' as a period. Type 'done' when you are finished with the message."))
+            input_3 = input("Enter your message one letter at a time. Use '//' to seperate words and '////' as a period. Type 'done' when you are finished with the message.")
             input_3 = input_3.lower()
 
         if input_3 != "done":
