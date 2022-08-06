@@ -7,7 +7,7 @@ while counter == None :
     print("To get the full NATO Phonetic Alphabet, enter '2'. ")
     print("To encode a string into Morse Code, enter '3'. ")
     print("To decode a Morse Code message into a string, enter '4'. ")
-    input_1 = input(print("To encode a string into the NATO Alphabet, enter '5'. "))            
+    input_1 = input("To encode a string into the NATO Alphabet, enter '5'. ")            
     for i in range (0, 5):
         if accepted_val[i] == input_1:
             counter = i + 1
@@ -67,3 +67,32 @@ elif counter == 3 or counter == 5:
 
     print(final_message)
 
+
+elif counter == 4:
+    input_3 = ""
+    while len(input_2) == 0:
+        input_3 = input(print("Enter your message one letter at a time. Use '//' to seperate words and '////' as a period. "))
+        input_3 = input_3.lower()
+
+    final_message = ""
+    
+    check = False
+    for i in range (0, 28):
+        if code[i] == input_3:
+            x = alphabet[i]
+            final_message = "%s%s" % (final_message, x)
+            check = True
+        else:
+            toggle = True
+
+    if check == True:
+        toggle = False
+    else:
+        final_message = "%s%s" % (
+            
+        
+    
+    
+    
+            
+        
