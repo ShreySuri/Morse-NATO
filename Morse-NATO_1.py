@@ -77,7 +77,7 @@ elif counter == 4:
         check = False
         while check == False:
             print("")
-            input_3 = input("Enter your message one letter at a time. Use '//', '////', and ' ' as needed. Enter 'done' when finished. ")
+            input_3 = input("Enter your message one letter at a time. Use '//' and '////' as needed. Enter 'done' when finished. ")
             input_3 = input_3.lower()
 
             for i in range (0, 28):
