@@ -67,11 +67,6 @@ elif counter == 3 or counter == 5:
 
     print(final_message)
 
-
-
-
-counter = 4
-
 elif counter == 4:
 
     check = False
